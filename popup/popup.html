@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: sans-serif;
+      height: 300px;
+      width: 200px;
+      background: white;
+      border: 10px solid #1b6bc7;
+      margin: 0;
+      padding: 10px;
+      text-align: center;
+    }
+    p {
+      font-size: 15;
+    }
+    #skipped {
+      line-height: 0px;
+      font-size: 25px;
+    }
+
+    #icon {
+      transition: transform 0.1s;
+      transform: scale(1);
+    }
+
+    #icon:hover {
+      transform: scale(1.1);
+    }
+
+    #icon:active {
+      transform: scale(1);
+    }
+
+    .grey {
+      filter: grayscale(100%);
+    }
+  </style>
+</head>
+<body>
+  <h1>SafeLink Skipper</h1>
+  <p>Click to enable/disable:</p>
+  <img id='icon' draggable='false' src='/icons/icon.png' />
+  <p>Total skipped:</p>
+  <p id='skipped'></p>
+</body>
+<script src="./popup.js"></script>
+</html>

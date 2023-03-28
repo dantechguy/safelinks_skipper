@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Safelinks Skipper",
+  "version": "0.0.1",
+
+  "description": "Automatically skips the Outlooks safelinks feature in the browser.",
+  "icons": {
+    "128": "icons/icon.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": [
+    "storage",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "https://*.safelinks.protection.outlook.com/"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "safelinks",
+      "enabled": true,
+      "path": "url_redirect/rule.json"
+    }]
+  },
+  "content_scripts": [
+    {
+      "js": ["url_replace/replace.js"],
+      "matches": [
+        "https://*.outlook.office365.com/*",
+        "https://*.outlook.office.com/*"
+      ]
+    }
+  ]
+}
