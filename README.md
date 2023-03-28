@@ -14,6 +14,10 @@ Any `*.safelinks.protection.outlook.com` links you do click on will be redirecte
 
 ## How to Install
 
+**Download From Chrome Web Store**
+
+Visit the extension's [Chrome Store page](https://chrome.google.com/webstore/detail/nojaomiagfnliakjlnhhjogacadihina/) and click "Add to Chrome". If the page is down, use the instructions below to install locally instead.
+
 **Install Locally**
 
 1. Download this repo
