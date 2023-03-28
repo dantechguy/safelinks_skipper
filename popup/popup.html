@@ -3,8 +3,8 @@
 <head>
   <style>
     body {
+      user-select: none;
       font-family: sans-serif;
-      height: 300px;
       width: 200px;
       background: white;
       border: 10px solid #1b6bc7;
@@ -13,7 +13,7 @@
       text-align: center;
     }
     p {
-      font-size: 15;
+      font-size: 15px;
     }
     #skipped {
       line-height: 0px;
@@ -33,15 +33,15 @@
       transform: scale(1);
     }
 
-    .grey {
-      filter: grayscale(100%);
+    .off {
+      content: url("/icons/icon_off.png");
     }
   </style>
 </head>
 <body>
   <h1>SafeLink Skipper</h1>
   <p>Click to enable/disable:</p>
-  <img id='icon' draggable='false' src='/icons/icon.png' />
+  <img id='icon' draggable='false' src='/icons/icon_on.png' />
   <p>Total skipped:</p>
   <p id='skipped'></p>
 </body>

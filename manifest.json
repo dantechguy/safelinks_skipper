@@ -32,5 +32,8 @@
         "https://*.outlook.office.com/*"
       ]
     }
-  ]
+  ],
+  "background": {
+    "service_worker": "onboarding/onboarding.js"
+  }
 }

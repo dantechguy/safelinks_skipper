@@ -30,14 +30,14 @@ function showSkippedCount(n) {
 
 function updateEnabled(enabled) {
 	if (enabled) {
-		document.getElementById('icon').classList.remove('grey');
+		document.getElementById('icon').classList.remove('off');
 		chrome.action.setIcon({path: '../icons/icon.png'});
 		chrome.declarativeNetRequest.updateEnabledRulesets({
 			enableRulesetIds: ['safelinks']
 		});
 	} else {
-		document.getElementById('icon').classList.add('grey');
-		chrome.action.setIcon({path: '../icons/icon_disabled.png'});
+		document.getElementById('icon').classList.add('off');
+		chrome.action.setIcon({path: '../icons/icon_grey.png'});
 		chrome.declarativeNetRequest.updateEnabledRulesets({
 			disableRulesetIds: ['safelinks']
 		});
