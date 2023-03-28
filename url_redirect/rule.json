@@ -7,7 +7,7 @@
 			"redirect": {
 				"transform": {
 					"scheme": "chrome-extension",
-					"host": "dcfnmfabnpkeiefelfmhgjmekdjdfhil",
+					"host": "PASTE EXTENSION ID HERE",
 					"path": "url_redirect/redirect.html"
 				}
 			}
