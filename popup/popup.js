@@ -1,3 +1,5 @@
+// This file handles the logic to display the extension's popup window and toggle if its enabled.
+
 chrome.storage.local.get(['skipped', 'enabled']).then(
 	(res) => {
 		if (res.hasOwnProperty('skipped')) {

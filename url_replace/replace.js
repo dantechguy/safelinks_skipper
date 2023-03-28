@@ -1,9 +1,13 @@
-// This file 
+// This file handles replacing the HTML href attribute of <a> tags inside the Outlook web client.
 
 
 chrome.storage.local.get(['enabled']).then((res) => {
-	if (res.hasOwnProperty('enabled') && res.enabled) {
-		document.addEventListener('pointerover', tryReplaceHyperlinkUrl);
+	if (res.hasOwnProperty('enabled')) {
+		if (res.enabled) {
+			document.addEventListener('pointerover', tryReplaceHyperlinkUrl);
+		}
+	} else {
+		chrome.storage.local.set({enabled: true});
 	}
 });
 
