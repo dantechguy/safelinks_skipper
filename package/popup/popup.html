@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./switch.css" />
+  <style>
+    body {
+      user-select: none;
+      font-family: sans-serif;
+      width: 190px;
+      background: white;
+      border: 10px solid #1b6bc7;
+      margin: 0;
+      padding: 10px;
+      text-align: center;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    #heading img {
+      width: 70px;
+      height: 70px;
+      flex: 70px;
+    }
+    #heading {
+      display: flex;
+    }
+    #heading h1 {
+      margin-top: 10px;
+      margin-left: 10px;
+      text-align: left;
+    }
+    #onoff {
+      font-weight: bold;
+    }
+    #switch {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id='heading'>
+    <img src="/icons/icon.png" />
+    <h1>Safelinks Skipper</h1>
+  </div>
+  <p>is <span id='onoff'></span></p>
+  <label id="switch" class="switch">
+    <input type="checkbox" checked>
+    <span class="slider round"></span>
+  </label>
+  <p>You've skipped <span id='skipped'></span> Safe Links</p>
+</body>
+<script src="./popup.js"></script>
+</html>

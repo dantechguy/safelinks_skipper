@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Safelinks Skipper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 425px;
+      background: white;
+      border: 10px solid #1b6bc7;
+      margin: 10vh auto;
+      padding: 10px;
+      text-align: center;
+    }
+    p, ul {
+      font-size: 15px;
+    }
+    ul {
+      text-align: left;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+    #skipped {
+      line-height: 0px;
+      font-size: 25px;
+    }
+
+    @keyframes wobble {
+      0% { transform: rotate(-10deg) }
+      100% { transform: rotate(10deg) }
+    }
+
+    #icon {
+      animation: wobble 1s alternate infinite ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <img id='icon' draggable='false' src='/icons/icon.png' />
+  <h1>Remove Outlook Safelinks with Safelinks Skipper</h1>
+  <br>
+  <h3>What does this extension do?</h3>
+  <p>
+    By removing Outlook's Safe Links, you:
+  </p>
+  <ul>
+    <li>shorten your links back to normal,</li>
+    <li>stop Microsoft from seeing which websites you visit, and</li>
+    <li>speed up your internet browsing, since your data doesn't go through Microsoft first.</li>
+  </ul>
+  <br>
+  <h3>How does it work?</h3>
+  <p>
+  If you use Outlook on your browser, all links in Outlook will be automatically changed back to their original websites.
+</p><p>
+  If you use desktop Outlook, or click on Safe Links from other applications (such as WhatsApp or Gmail), these links will automatically be changed in your browser as soon as you click.
+  </p>
+  <br>
+  <h3>How do I pause the extension?</h3>
+  <p>
+    You can pause or resume at any time with the toggle in the extension's menu. The menu also shows the total number of Safe Links removed by the extension.
+  </p>
+</body>
+</html>

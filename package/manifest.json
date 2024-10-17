@@ -1,0 +1,75 @@
+{
+  "manifest_version": 3,
+  "name": "Safelinks Skipper — Remove/Fix Outlook Safe Links",
+  "version": "0.0.2",
+
+  "description": "Automatically replaces Safe Links from Outlook",
+  "icons": {
+    "128": "icons/icon.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": [
+    "storage",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "https://*.safelinks.protection.outlook.com/"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "safelinks",
+      "enabled": true,
+      "path": "url_redirect/rule.json"
+    }]
+  },
+  "content_scripts": [
+    {
+      "js": ["url_replace/replace.js"],
+      "run_at": "document_idle",
+      "matches": [
+        "https://*.outlook.office365.com/*",
+        "https://*.outlook.office.com/*",
+        "https://*.hotmail.com/*",
+        "https://*.mail.live.com/*",
+        "https://*.mail.microsoft.com/*",
+        "https://*.outlook.cn/*",
+        "https://*.outlook.com/*",
+        "https://*.outlook.ha.office365.com/*",
+        "https://*.outlook.live.com/*",
+        "https://*.outlook.office.com/*",
+        "https://*.outlook.office.de/*",
+        "https://*.outlook.office365.com/*",
+        "https://*.outlook.office365.us/*"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/icon.png"],
+      "matches": [
+        "https://*.outlook.office365.com/*",
+        "https://*.outlook.office.com/*",
+        "https://*.hotmail.com/*",
+        "https://*.mail.live.com/*",
+        "https://*.mail.microsoft.com/*",
+        "https://*.outlook.cn/*",
+        "https://*.outlook.com/*",
+        "https://*.outlook.ha.office365.com/*",
+        "https://*.outlook.live.com/*",
+        "https://*.outlook.office.com/*",
+        "https://*.outlook.office.de/*",
+        "https://*.outlook.office365.com/*",
+        "https://*.outlook.office365.us/*"
+      ]
+    },
+    {
+      "resources": ["url_redirect/redirect.html", "url_redirect/redirect.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "background": {
+    "service_worker": "onboarding/onboarding.js"
+  }
+}

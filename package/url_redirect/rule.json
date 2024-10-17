@@ -1,0 +1,20 @@
+[
+	{
+		"id": 1,
+		"priority": 1,
+		"action": {
+			"type": "redirect",
+			"redirect": {
+				"transform": {
+					"scheme": "chrome-extension",
+					"host": "nojaomiagfnliakjlnhhjogacadihina",
+					"path": "url_redirect/redirect.html"
+				}
+			}
+		},
+		"condition": {
+			"urlFilter": "||safelinks.protection.outlook.com",
+			"resourceTypes": ["main_frame"]
+		}
+	}
+]
