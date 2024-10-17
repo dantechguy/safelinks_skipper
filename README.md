@@ -21,7 +21,7 @@ If you use desktop Outlook, or click on Safe Links from other applications (such
 
 **Chrome Web Store (Recommended)**
 
-Visit the extension's [Chrome Store page](https://chrome.google.com/webstore/detail/nojaomiagfnliakjlnhhjogacadihina/) and click "Add to Chrome".
+Visit the extension's [Chrome Store page](https://chromewebstore.google.com/detail/nojaomiagfnliakjlnhhjogacadihina) and click "Add to Chrome".
 
 **Local Installation**
 
