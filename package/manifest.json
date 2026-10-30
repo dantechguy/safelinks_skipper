@@ -41,7 +41,8 @@
         "https://*.outlook.office.com/*",
         "https://*.outlook.office.de/*",
         "https://*.outlook.office365.com/*",
-        "https://*.outlook.office365.us/*"
+        "https://*.outlook.office365.us/*",
+        "https://*.outlook.cloud.microsoft/*"
       ]
     }
   ],
@@ -61,7 +62,8 @@
         "https://*.outlook.office.com/*",
         "https://*.outlook.office.de/*",
         "https://*.outlook.office365.com/*",
-        "https://*.outlook.office365.us/*"
+        "https://*.outlook.office365.us/*",
+        "https://*.outlook.cloud.microsoft/*"
       ]
     },
     {
